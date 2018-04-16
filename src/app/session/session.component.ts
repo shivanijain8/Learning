@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 
 @Component({
     selector: 'app-session',
-    template: `<h3>I am in sessions component using Template</h3>`,
+    templateUrl: './session.component.html',
     styleUrls: ['./session.component.css']
 })
 
-export class SessionComponent{}
+export class SessionComponent {
+    @Input() element: {type: string, name: string , age: string };
+}

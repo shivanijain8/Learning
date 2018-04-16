@@ -38,21 +38,4 @@ export class LearningComponent {
         this.randomNumber = Math.random();
         return this.randomNumber > 0.5 ? 'green' : 'red' ;
     }
-    addALine() {
-        this.sections.push(this.sectionsName);
-    }
-    addTeamOnePlayers() {
-      this.teams1.push({
-        type: 'Team1',
-        name: this.playerName,
-        content: this.playerAge,
-      });
-    }
-    addTeamTwoPlayers() {
-      this.teams2.push({
-        type: 'Team2',
-        name: this.playerName,
-        content: this.playerAge
-      });
-    }
 }

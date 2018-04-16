@@ -5,4 +5,12 @@
   </h1>
 </div>
 <app-learning></app-learning>
-
+<hr>
+<div class="container">
+    <app-sections 
+    (playerEntered)="addTeamOnePlayers($event)"></app-sections>
+    <hr>
+    <app-session 
+    *ngFor = "let player of playerElement"
+    [element]= "player"></app-session>
+</div>

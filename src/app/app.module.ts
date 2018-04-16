@@ -5,6 +5,8 @@ import { LearningComponent } from './learning/learning.component';
 import { SessionComponent } from './session/session.component';
 import { SectionsComponent } from './sections/sections.component';
 import { AppComponent } from './app.component';
+import { CustomDirectiveDirective } from './directives/custom-directive.directive';
+import { CustomStructuralDirective } from './directives/custom-structural-directive.directive';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { AppComponent } from './app.component';
     AppComponent,
     LearningComponent,
     SessionComponent,
-    SectionsComponent
+    SectionsComponent,
+    CustomDirectiveDirective,
+    CustomStructuralDirective
   ],
   imports: [
     BrowserModule,
